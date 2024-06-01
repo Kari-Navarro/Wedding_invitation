@@ -1,68 +1,260 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+#root{
+  width: 340px;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  background-image: url('./images/background-option-02.jpg');
+  background-attachment: fixed;
+  background-size:cover;
+  display:grid;
+  justify-content: center;
+  justify-items: center;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+
+.section-header{
+  display:grid;
+  justify-content: center;
+  justify-items: center;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+p{
+  font-family: 'Great Vibes', cursive;
+  color: #4E1807;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+
+h2{
+  font-family: 'IM Fell French Canon SC';
+  font-size:xx-large;
+  font-weight: 600;
+  color: #B65431;
+}
+
+/* CAROUSEL*/
+
+.carousel img {
+  width: 100%; /* O el ancho deseado */
+  height: 300px; /* Altura fija */
+  object-fit:fill;
+  border-radius: 10%;
+}
+
+/*PHFRASE*/
+
+.container-phrase{
+  padding-top: 10%;
+  width: 100%;
+  text-align: center;
+  font-size: xx-large;
+}
+
+/*DATE*/
+.section-date{
+  display:grid;
+  grid-template-columns: 35% 40% 25%;
+  grid-template-rows: 20% 15% 25% 15%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cuando{
+  grid-column: 1/4;
+  font-family: 'IM Fell French Canon SC';
+  font-size:xx-large;
+  font-weight: 600;
+  color: #B65431;
+}
+
+.sabado,
+.celebracion,
+.delas,
+.sep,
+.juan,
+.pm{
+font-size:medium;
+font-family: 'IM Fell French Canon SC';
+font-weight: 600;
+}
+
+.veintiocho,
+.charro,
+.siete{
+  font-size: xx-large;
+  color:#B65431;
+  line-height: 1; 
+  
+}
+/*COUNTDOWN*/
+.section-countdown{
+  font-family: 'IM Fell French Canon SC';
+  display:grid; 
+  color: #4E1807; 
+  grid-template-columns:25% 25% 25% 25%;
+  grid-template-rows: 10% 40% 10%;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+}
+
+.counter1{
+  grid-column: 1/2;
+  font-size: xx-large;
+  font-weight: 900;
+}
+.counter2{
+  grid-column: 2/3;
+  font-size: xx-large;
+  font-weight: 900;
+}
+.counter3{
+  grid-column: 3/4;
+  font-size: xx-large;
+  font-weight: 900;
+}
+.counter4{
+  grid-column: 4/5;
+  font-size: xx-large;
+  font-weight: 900;
+}
+
+.text-faltan{
+  font-family: 'IM Fell French Canon SC';
+  font-size:xx-large;
+  font-weight: 600;
+  color: #B65431;
+  grid-column: 2/4;
+}
+
+.dias,
+.horas,
+.min,
+.seg{
+  font-size: large;
+}
+
+/*ITINERARY*/
+.section-itinerario{
+  display:grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.itinerario{
+  width: 320px;
+  height: 400px;
+  margin-top: 5%;
+}
+
+
+
+
+
+/* MAPS*/
+.section-maps{
+  display:grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 15% 20% 35% 20% 15%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'IM Fell French Canon SC';
+  margin-top: 20%;
+}
+.ceremonia{
+  grid-column: 1/4;
+  font-family: 'IM Fell French Canon SC';
+}
+  
+.donde{
+  grid-column: 1/3;
+  font-family: 'IM Fell French Canon SC';
+  font-size: xx-large;
+  color: #B65431;
+  font-weight: 600;
+}
+.party,
+.church{
+  border-radius: 10%;
+  width: 150px;
+  height: 120px;
+  grid-row: 3/4;
+  margin-left:7%;
+  
+}
+
+.maps-adress{
+  grid-column: 1/3;
+  font-family:'IM Fell French Canon SC';
+  
+}
+
+.btn-maps{
+  grid-row: 5;
+  font-family: 'IM Fell French Canon SC';
+  font-size: large;
+  font-weight: bolder;
+  border-radius: 30px;
+  background-color: #f0ede709;
+  color: #4E1807;
+  border: 2px solid #4E1807;
+  box-shadow: 5px 8px 5px 3px #c2984a77;
+  padding: 10px 32px;
+  width: 210px;
+  height: 50px;
+  margin-left: 40%;
+}
+
+h3,
+h4{
+  color:#4E1807;
+}
+
+
+/*ASSISTANCE*/
+.section-confirmacion{
+  margin-top: 20%;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 100%;
+  grid-template-rows: 15% 85%;
+}
+
+
+.titulo-confirmacion{
+  grid-column: 1/2;
+  grid-row: 1;
+  font-family: 'IM Fell French Canon SC';
+  font-size:xx-large;
+  font-weight: 600;
+  color: #B65431;
+}
+
+
+/*Whatsapp*/
+.section-whats{
+  margin-top: 10%;
+  display:grid;
+  grid-template-columns: 70% 30%;
+  
+}
+
+.icon-whats,
+a{
+  grid-column: 2/3;
+  width: 80px;
+  height: 80px;
+}
+
+
+
+@media (min-width:600px){
+  #root{
+    background-color: #f0ede75e;
+    border-radius: 30px;
+    
+
   }
 }
