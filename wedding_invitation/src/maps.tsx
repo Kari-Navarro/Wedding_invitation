@@ -13,16 +13,18 @@ const GoogleMapsLink: React.FC = () => {
   };
 
   return (
-    <div>
-      <div>
-        <img src={church} alt="Capilla" />
-      </div>
-      <div>
-        <img src={party} alt="Salón Casino" />
-      </div>
-      <p>Av.661 No.300, esquina con Av. 608. Colonia San Juan de Aragón 4ta y 5ta Secc. Alcaldia Gustavo A. Madero, CDMX C.P. 07979</p>
-    <button onClick={handleMapClick}>Abrir en Google Maps</button>
-    </div>
+    <section className='section-maps'>
+      <h2 className='donde'>¿DÓNDE?</h2>
+      <h3 className='ceremonia'> La ceremonia religiosa y la fiesta se celebrarán en las instalaciones de la Capilla y Salón Casino del Lienzo Charro.</h3>
+      
+        <img src={church} alt="Capilla" className='church' />
+      
+      
+        <img src={party} alt="Salón Casino" className='party'/>
+      
+      <h3 className='maps-adress'>Lienzo Charro<br/>Av.661 No.300, Colonia San Juan de Aragón, C.P. 07979, GAM, CDMX.</h3>
+    <button onClick={handleMapClick} className='btn-maps'>¿Cómo llegar?</button>
+    </section>
   );
 };
 

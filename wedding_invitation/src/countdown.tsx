@@ -38,12 +38,17 @@ const Countdown: React.FC<CountdownProps> = ({ weddingDate }) => {
   });
 
   return (
-    <div>
-      <div>{timeLeft.days} days</div>
-      <div>{timeLeft.hours} hours</div>
-      <div>{timeLeft.minutes} minutes</div>
-      <div>{timeLeft.seconds} seconds</div>
-    </div>
+    <section className='section-countdown'>
+      <h2 className='text-faltan'>FALTAN:</h2>
+      <div className='counter1'>{timeLeft.days}</div>
+      <div className='counter2'>{timeLeft.hours}</div>
+      <div className='counter3'>{timeLeft.minutes}</div>
+      <div className='counter4'>{timeLeft.seconds}</div>
+      <p className='dias'>Dias</p>
+      <p className='horas'>Horas</p>
+      <p className='min'>Min.</p>
+      <p className='seg'>Seg</p>
+    </section>
   );
 };
 

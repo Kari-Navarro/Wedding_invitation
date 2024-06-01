@@ -1,12 +1,12 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Importa los estilos del carrusel
-import photo1 from './images/1.jpg'
-import photo2 from './images/2.jpg'
-import photo3 from './images/3.jpg'
-import photo4 from './images/4.jpg'
-import photo5 from './images/5.jpg'
-import photo6 from './images/6.jpg'
+import photo1 from './images/1.png'
+import photo2 from './images/2.png'
+import photo3 from './images/3.png'
+import photo4 from './images/4.png'
+import photo5 from './images/5.png'
+import photo6 from './images/6.png'
 
 const PhotoCarousel: React.FC = () => {
   return (

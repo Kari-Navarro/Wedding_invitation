@@ -1,24 +1,20 @@
 import React from 'react';
 import './index.css';
+import years from './images/prueba1.png'
+
+
 
 
 const Header: React.FC = () => {
     return (
-      <section className='header'>
-        <h1>CELEBRACIÓN DE NUESTRO ANIVERSARIO</h1>
-        <p>50</p>
-        <p>María Guadalupe</p>
-        <p>y</p>
-        <p>Marcelino</p>
-
-
-
-
-
-
-
-
-
+      <section className='section-header'>
+       
+        <img src={years} alt="50 aniversario"/>
+      
+      <audio autoPlay loop>
+        <source src="/public\audio\solamente.mp3" type="audio/mpeg" />
+        Tu navegador no soporta la etiqueta de audio.
+      </audio>
       </section>
     );
   };
