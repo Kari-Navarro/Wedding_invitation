@@ -11,10 +11,10 @@ const Header: React.FC = () => {
        
         <img src={years} alt="50 aniversario"/>
       
-      <audio controls autoPlay loop>
+      {/*<audio autoPlay controls loop>
         <source src="/audio/solamente.mp3" type="audio/mpeg" />
         Tu navegador no soporta la etiqueta de audio.
-      </audio>
+      </audio>*/}
       </section>
     );
   };
