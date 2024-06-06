@@ -10,6 +10,7 @@
     "vercel-build": "npm install && npm run build"
   },
   "dependencies": {
+    "@formfacade/embed-react": "^1.0.4",
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
@@ -29,6 +30,4 @@
     "typescript": "^5.2.2",
     "vite": "^5.1.6"
   }
-
-  
 }
