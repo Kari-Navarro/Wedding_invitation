@@ -1,4 +1,4 @@
-import FormfacadeEmbed from "@formfacade/embed-react";
+import FormfacadeEmbed from '@formfacade/embed-react'
 
 const Assistance= () => {
   return (
