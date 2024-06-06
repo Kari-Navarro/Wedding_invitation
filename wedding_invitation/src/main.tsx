@@ -12,11 +12,12 @@ import Date from './date.tsx'
 import Assistance from './confirm.tsx'
 import Itinerary from './itinerary.tsx'
 import Whats from './whats.tsx'
-
+import Audio from './audio.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Header/>
+    <Audio/>
     <PhotoCarousel/>
     <Phrase/>
     <Date/>
