@@ -39,6 +39,26 @@ h2{
   color: #B65431;
 }
 
+/* AUDIO*/
+.section-audio{
+  display: grid;
+  justify-content:end;
+}
+
+.btn-audio{
+  border-radius: 50%;
+  border: 1px solid #4E1807;
+  background-color: #f0ede709;
+  box-shadow: 1px 1px 1px 1px #c2984a77;
+  width: 40px;
+  height: 40px;
+  margin: 15px;
+}
+
+
+
+
+
 /* CAROUSEL*/
 
 .carousel img {
@@ -91,7 +111,6 @@ font-weight: 600;
   font-size: xx-large;
   color:#B65431;
   line-height: 1; 
-  
 }
 /*COUNTDOWN*/
 .section-countdown{
@@ -225,8 +244,8 @@ h4{
   display: grid;
   text-align: center;
   grid-template-columns: 100%;
-  grid-template-rows: 20% 70%;
   align-items: center;
+  justify-content: center;
 }
 
 
@@ -236,6 +255,9 @@ h4{
   font-family: 'IM Fell French Canon SC';
 }
 
+.form{
+  margin:500px
+}
 
 /*Whatsapp*/
 .section-whats{

@@ -1,4 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { faCirclePlay } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPause } from '@fortawesome/free-solid-svg-icons';
 
 const Audio: React.FC = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -18,12 +21,12 @@ const Audio: React.FC = () => {
   };
 
   return (
-    <div>
+    <section className='section-audio'>
       <audio ref={audioRef} src="/audio/solamente.mp3" autoPlay loop />
-      <button onClick={toggleMute}>
-        {isMuted ? 'Unmute' : 'Mute'}
+      <button onClick={toggleMute} className='btn-audio'>
+        {isMuted ? <FontAwesomeIcon icon={faCirclePlay} style={{color: "#4e1807",}} /> : <FontAwesomeIcon icon={faPause} style={{color: "#4e1807",}} /> }
       </button>
-    </div>
+    </section>
   );
 };
 
