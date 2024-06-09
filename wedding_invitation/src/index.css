@@ -3,10 +3,10 @@
 }
 
 body {
-  background-image: url('./images/back_peque.svg');
+  background-image: url('./images/ultima.svg');
   background-size:cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;  
+   
   display:grid;
   justify-content: center;
   justify-items: center;
