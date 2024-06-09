@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: url('./images/background-option-02.svg');
+  background-image: url('./images/back_peque.svg');
   background-size:cover;
   background-repeat: no-repeat;
   background-attachment: fixed;  
@@ -12,9 +12,7 @@ body {
   justify-items: center;
 }
 
-.img {
-  width: 100%;
-}
+
 
 
 .section-header{
